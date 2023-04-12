@@ -29,12 +29,12 @@ module.exports = ({ env }) => ({
         },
       }
     },
-    'contacts': {
+    /* 'contacts': {
       name: "contacts", // the name of your plugin
       description: "A plugin for managing contacts.",
       icon: "📞",
       enabled: true,
       resolve: './src/plugins/contacts', // the path to your plugin
       // any other configuration options you need
-    },
+    }, */
   });
