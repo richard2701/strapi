@@ -1,10 +1,10 @@
 module.exports = ({ env }) => ({
     'users-permissions': {
       config: {
-      jwtSecret: env('JWT_SECRET'),
+        jwtSecret: env('JWT_SECRET'),
       },
     },
-    upload: {
+/*     upload: {
       config: {
         provider: 'cloudinary',
         providerOptions: {
@@ -17,5 +17,24 @@ module.exports = ({ env }) => ({
           delete: {},
         },
       },
+    }, */
+    graphql: {
+      enabled: true,
+      config: {
+        playgroundAlways: false,
+        defaultLimit: 10,
+        maxLimit: 20,
+        apolloServer: {
+          tracing: true,
+        },
+      }
+    },
+    'contacts': {
+      name: "contacts", // the name of your plugin
+      description: "A plugin for managing contacts.",
+      icon: "📞",
+      enabled: true,
+      resolve: './src/plugins/contacts', // the path to your plugin
+      // any other configuration options you need
     },
   });

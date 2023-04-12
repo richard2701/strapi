@@ -1,0 +1,22 @@
+type Mutation {
+  createContact(input: CreateContactInput!): Contact!
+}
+
+input CreateContactInput {
+  firstName: String!
+  lastName: String!
+  email: String!
+  phone: String!
+  selectedOption: String!
+  date: String!
+}
+
+type Contact {
+  id: ID!
+  firstName: String!
+  lastName: String!
+  email: String!
+  phone: String!
+  selectedOption: String!
+  date: String!
+}
