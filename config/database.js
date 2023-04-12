@@ -1,4 +1,4 @@
-module.exports = ({ env }) => ({
+/* module.exports = ({ env }) => ({
   connection: {
     client: 'mysql',
     connection: {
@@ -10,8 +10,8 @@ module.exports = ({ env }) => ({
       ssl: env.bool(false),
     },
   },
-});
-/* module.exports = ({ env }) => ({
+}); */
+module.exports = ({ env }) => ({
   connection: {
     client: 'postgres',
     connection: {
@@ -23,4 +23,4 @@ module.exports = ({ env }) => ({
       ssl: env.bool(true),
     },
   },
-}); */
+});
