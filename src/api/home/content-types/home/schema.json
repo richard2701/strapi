@@ -14,11 +14,18 @@
   "attributes": {
     "hero": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "hero.hero"
     },
-    "comunas": {
-      "type": "json"
+    "infoCard": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cards.info-card"
+    },
+    "formContract": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form.form-contract"
     }
   }
 }

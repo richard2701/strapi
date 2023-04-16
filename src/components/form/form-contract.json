@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_form_form_contracts",
+  "info": {
+    "displayName": "formContract"
+  },
+  "options": {},
+  "attributes": {
+    "titleStep1": {
+      "type": "string",
+      "required": true
+    },
+    "descriptionStep1": {
+      "type": "string"
+    },
+    "titleStep2": {
+      "type": "string",
+      "required": true
+    },
+    "descriptionStep2": {
+      "type": "string"
+    },
+    "titleStep3": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
