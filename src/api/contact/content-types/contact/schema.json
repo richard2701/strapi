@@ -32,6 +32,10 @@
     },
     "date": {
       "type": "datetime"
+    },
+    "address": {
+      "type": "string",
+      "maxLength": 200
     }
   }
 }
